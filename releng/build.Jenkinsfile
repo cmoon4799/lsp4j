@@ -58,6 +58,7 @@ pipeline {
       steps {
         timeout(activity: true, time: 20) {
           sh "./releng/runjapicmp.sh"
+          sh "echo 'Step is done'"
         }
       }
     }
